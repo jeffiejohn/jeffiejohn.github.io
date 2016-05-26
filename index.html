@@ -1,0 +1,61 @@
+<!-- Designed by Jeffie John -->
+<!-- Song repository for Jesus Youth songs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Sing Hallelujah</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/typeahead.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script> 
+		$(function(){
+			$("#headerContent").load("header.html"); 
+			$("#footerContent").load("footer.html"); 
+		});
+    </script> 
+  </head>
+  <body>
+	
+	<div id="headerContent"></div>
+	
+	<section id="cover">
+		<div id="cover-caption">
+			<div class="container">				
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="cover-banner">
+						<h1 class="display-4">Sing Hallelujah</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, impedit, maiores, voluptatem, rem voluptatibus consequuntur dolorum id quis repudiandae qui quaerat ex beatae. Tempore, nobis deserunt temporibus expedita cum itaque.</p>
+						
+						<form action="" class="form-inline">
+							<div class="form-group">
+								<div id="songs">
+									<input type="text" class="form-control form-control-lg typeahead" placeholder="Search for a song" name="song"/>																	
+								</div>
+								
+							</div>
+							<input type="button" class="btn btn-warning-outline btn-lg" value="Find it!" onclick="return myFunction(this.form.song.value)" />								
+						</form>						
+					</div>
+					<br>
+					
+				</div>
+			</div>
+		</div>
+	</section>	
+	
+	<div id="footerContent"></div>
+	
+	<!-- jQuery first, then Bootstrap JS. -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap3-typeahead.js"></script>	
+	<script src="js/dropdown.js"></script>	
+	<script src="js/song-list.js"></script>	
+  </body>
+</html>
